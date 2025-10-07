@@ -1,0 +1,98 @@
+.home-page-container {
+  min-height: 100vh; /* Takes full viewport height */
+  overflow: hidden; /* Crucial: Prevents any scrolling */
+  background-color: #f8f9fa; /* Light background */
+}
+
+/* Adjustments for various screen sizes to prevent scroll */
+
+/* Custom H1 for title */
+.custom-h1 {
+  font-size: calc(1.8rem + 1vw); /* Responsive font size */
+  line-height: 1.2;
+}
+
+/* Custom P for lead text */
+.custom-p {
+  font-size: calc(0.9rem + 0.3vw); /* Responsive font size */
+  line-height: 1.4;
+  max-width: 80%; /* Limit width for readability */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card image adjustments */
+.custom-card-img {
+  max-height: 25vh; /* Limit image height to a percentage of viewport height */
+  object-fit: contain; /* Ensures image fits without cropping */
+  padding: 1rem; /* Add some padding around the image */
+}
+
+/* Card title */
+.custom-card-title {
+  font-size: calc(1.2rem + 0.2vw); /* Responsive font size */
+}
+
+/* Card text */
+.custom-card-text {
+  font-size: calc(0.8rem + 0.1vw); /* Responsive font size */
+}
+
+/* Custom button */
+.custom-button {
+  font-size: calc(0.9rem + 0.1vw); /* Responsive font size */
+  padding: 0.75rem 1.5rem !important; /* Ensure consistent padding */
+}
+
+/* Footer text */
+.custom-footer-text {
+  font-size: calc(0.7rem + 0.1vw); /* Responsive font size */
+}
+
+/* Small screen adjustments */
+@media (max-width: 767.98px) {
+  .custom-h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem !important;
+  }
+  .custom-p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem !important;
+  }
+  .custom-card-img {
+    max-height: 20vh;
+    padding: 0.5rem;
+  }
+  .custom-card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem !important;
+  }
+  .custom-card-text {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem !important;
+  }
+  .custom-button {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem !important;
+  }
+  .custom-footer-text {
+    font-size: 0.65rem;
+  }
+  .py-4.px-3 { /* Adjust main content padding */
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+}
+
+/* Medium screen adjustments */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .custom-h1 {
+    font-size: 2rem;
+  }
+  .custom-p {
+    font-size: 1rem;
+  }
+  .custom-card-img {
+    max-height: 22vh;
+  }
+}

@@ -210,8 +210,8 @@ const VideoProctor = () => {
           await sendChunk(e.data, sessionId, ++chunkSeq);
         };
 
-        // mediaRecorder.start(2000);
-        // sending = true;
+        mediaRecorder.start(2000);
+        sending = true;
         console.log("Webcam is ON")
       } catch (err) {
         console.error("Error accessing webcam:", err);
